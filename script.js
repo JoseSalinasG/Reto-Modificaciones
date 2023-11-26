@@ -1,8 +1,15 @@
+// Declarar las constantes de las clases y del Id.
 const circulo = document.getElementById('circulo');
-circulo.style.backgroundColor = 'red';
-circulo.style.fontFamily = 'roboto';
-circulo.style.border = '4px solid white';
-circulo.style.fontSize = '30px'
+const texto = document.getElementsByClassName('texto')[0];
+const boton = document.getElementsByClassName('boton')[0];
 
-const fondo = document.getElementsByTagName('body')[0];
-fondo.style.backgroundColor = 'gray';
+//Cambio de color del id Circulo.
+circulo.classList.toggle('naranja');
+circulo.classList.toggle('rojo');
+circulo.classList.toggle('verde');
+
+// Modificacion directa de css 
+texto.style.fontSize = '30px';
+texto.classList.toggle = 'negrita';
+// modificado por el Set de atributos.
+boton.setAttribute('style','font-size: 25px ; border-radius: 20%; background-color : gray;');
